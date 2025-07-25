@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #00ff41;
+  --terminal-green: #00ff41;
+  --terminal-bright-green: #00ff66;
+  --terminal-dim-green: #00cc33;
+  --cyberpunk-blue: #00d4ff;
+  --cyberpunk-purple: #bf00ff;
+  --cyberpunk-pink: #ff0080;
+  --museum-gold: #ffd700;
+  --shadow-glow: 0 0 20px rgba(0, 255, 65, 0.3);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-ibm-plex-mono);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-green-400: var(--terminal-green);
+  --color-green-500: var(--terminal-bright-green);
+  --color-green-300: var(--terminal-dim-green);
+  --color-cyan-400: var(--cyberpunk-blue);
+  --color-purple-500: var(--cyberpunk-purple);
+  --color-pink-500: var(--cyberpunk-pink);
+  --color-yellow-400: var(--museum-gold);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #00ff41;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jetbrains-mono), monospace;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--terminal-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terminal-bright-green);
+}
+
+/* Terminal glow effect */
+.terminal-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+/* Cyberpunk neon text */
+.neon-text {
+  text-shadow: 0 0 5px currentColor,
+               0 0 10px currentColor,
+               0 0 15px currentColor,
+               0 0 20px currentColor;
+}
+
+/* Museum room entrance effect */
+.room-entrance {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.room-entrance:hover {
+  border-color: var(--terminal-green);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.02);
+}
+
+/* ASCII Art styling */
+.ascii-art {
+  font-family: var(--font-jetbrains-mono), monospace;
+  line-height: 1.2;
+  white-space: pre;
+  color: var(--terminal-green);
 }

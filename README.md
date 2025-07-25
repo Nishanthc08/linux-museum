@@ -1,36 +1,167 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Linux Museum 🐧
 
-## Getting Started
+An immersive, interactive web experience that teaches Linux concepts through storytelling, visual metaphors, and hands-on terminal practice.
 
-First, run the development server:
+## 🎯 Project Vision
 
+The Linux Museum is a virtual museum where each "room" teaches specific Linux concepts through:
+
+- **Interactive Storytelling**: Engaging narratives that explain the philosophy behind Linux
+- **Visual Metaphors**: Complex concepts made accessible through intuitive visualizations
+- **Terminal Emulation**: Real-time practice with command-line interfaces
+- **Philosophical Context**: Understanding the "why" behind Linux design decisions
+
+## 🏛️ Museum Rooms
+
+### ✅ Completed Rooms
+
+1. **The Hall of Origins** - Journey through Linux history and philosophy
+2. **The Shell Chamber** - Interactive terminal learning with guided lessons
+3. **The Filesystem Gallery** - Visual exploration of Linux directory structure
+
+### 🚧 Planned Rooms
+
+4. **The Kernel Core** - Deep dive into the heart of the operating system
+5. **The Man Page Library** - Documentation and help system mastery
+6. **The Daemon Dungeon** - Background processes and system services
+7. **The Security Vault** - Permissions, users, and system security
+8. **The Code Forge** - Development tools and programming environments
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd linux-museum
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and navigate to `http://localhost:3000`
 
-## Learn More
+## 🛠️ Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js 15 with React 19
+- **Styling**: Tailwind CSS with custom cyberpunk theme
+- **Animations**: Framer Motion for smooth transitions
+- **Typography**: IBM Plex Mono & JetBrains Mono for terminal aesthetic
+- **Icons**: Lucide React for consistent iconography
+- **Terminal**: Planned integration with xterm.js for real terminal emulation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Philosophy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Visual Theme
+- **Cyberpunk Aesthetic**: Dark backgrounds with neon green terminal colors
+- **Museum Layout**: Intuitive navigation between themed rooms
+- **Terminal Glow**: Authentic command-line interface styling
 
-## Deploy on Vercel
+### Learning Approach
+- **Philosophy First**: Understanding the "why" before the "how"
+- **Interactive Practice**: Learning by doing with real commands
+- **Progressive Complexity**: Building from basic concepts to advanced topics
+- **Cultural Context**: Appreciating the history and community behind Linux
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎓 Educational Goals
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Demystify Linux**: Make the command line approachable for beginners
+2. **Teach Philosophy**: Understand Unix principles and design decisions
+3. **Build Confidence**: Hands-on practice in a safe, guided environment
+4. **Cultural Appreciation**: Learn about the open source community and history
+5. **Practical Skills**: Real-world command line competency
+
+## 📚 Learning Paths
+
+### Beginner Path
+1. Hall of Origins (History & Philosophy)
+2. Shell Chamber (Basic Commands)
+3. Filesystem Gallery (Directory Structure)
+
+### Intermediate Path
+4. Kernel Core (System Architecture)
+5. Man Page Library (Documentation)
+6. Daemon Dungeon (System Services)
+
+### Advanced Path
+7. Security Vault (Permissions & Security)
+8. Code Forge (Development Environment)
+
+## 🤝 Contributing
+
+We welcome contributions! Whether you're:
+- Adding new rooms or lessons
+- Improving existing content
+- Fixing bugs or enhancing performance
+- Adding accessibility features
+- Improving documentation
+
+Please feel free to:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📝 Development Notes
+
+### Room Structure
+Each room follows a consistent pattern:
+- **Philosophical Introduction**: Context and meaning
+- **Interactive Content**: Hands-on learning experiences
+- **Visual Elements**: Metaphors and illustrations
+- **Practice Opportunities**: Real terminal commands when applicable
+
+### Code Organization
+- `/src/app/` - Main application pages
+- `/src/app/rooms/` - Individual museum rooms
+- `/src/components/` - Reusable UI components (future)
+- `/src/styles/` - Custom styling and themes
+
+## 🎯 Future Enhancements
+
+- **Backend Integration**: Real Linux containers for authentic terminal experience
+- **User Progress**: Save learning progress and achievements
+- **Community Features**: Share experiences and solutions
+- **Multi-language Support**: Internationalization for global audience
+- **Mobile Optimization**: Touch-friendly interfaces for mobile devices
+- **Accessibility**: Enhanced screen reader support and keyboard navigation
+
+## 🐧 Philosophy
+
+> "In the beginning was the Command Line" - Neal Stephenson
+
+Linux represents more than just an operating system—it's a philosophy of:
+- **Collaboration** over competition
+- **Transparency** over secrecy
+- **Merit** over politics
+- **Innovation** over imitation
+
+The Linux Museum aims to preserve and share this philosophy with new generations of users and developers.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- **Linus Torvalds** - For creating Linux and inspiring millions
+- **The GNU Project** - For the free software foundation
+- **Unix Pioneers** - For the philosophical groundwork
+- **Open Source Community** - For making this all possible
+
+---
+
+*Welcome to the Linux Museum - Where every command tells a story* 🚀
